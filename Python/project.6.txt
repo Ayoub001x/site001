@@ -1,0 +1,5 @@
+thetotal = input("Please type the number of minutes: \n")
+int_thetotal = int(thetotal)
+hours = int_thetotal // 60 
+minutes = int_thetotal % 60
+print('This course is: ' + str(hours) + 'hours and ' + str(minutes) + ' minutes ')

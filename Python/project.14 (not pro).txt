@@ -1,0 +1,14 @@
+pni = int(input('Enter a 4-digit pni code: '))
+import random
+my_random = random.randint(1,10) + random.randint(10,99) + random.randint(100,999) + random.randint(1000,9999)
+if (999 < pni <= 9999):
+    print('input true current verification...')
+    if pni == my_random:
+        print('good, the code true')
+    else:
+        print('Sorry! the code fault')
+        print(f'The code true is {my_random}.')
+
+else:
+    print(f'sorry, error in {[pni]}')
+    print('Please retry')

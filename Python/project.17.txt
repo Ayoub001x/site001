@@ -1,0 +1,42 @@
+you_book1 = input('Enter the name of a book you own: ')
+you_book2 = input('Enter the name another book you own (or press "enter" to skip): ')
+
+you_books = [you_book1]
+
+if you_book2:
+    you_books.append(you_book2)
+    print('\n Your library: ',you_books )
+else:
+    print('\n Your library: ',you_books )
+    
+futur_book1 = input('\n Enter the name of a book you wish to have in the futur: ')
+
+futur_book2 = input('Enter the name anther book you wish to have (or press "enter" to skip): ')
+
+futur_books = [futur_book1]
+
+if futur_book2:
+    futur_books.append(futur_book2)
+    print('\n Your wishlist: ',futur_books)
+else:
+    print('\n Your wishlist: ',futur_books)
+    
+wishlist = input('\nEnter the name of a book from your wishlist that you`ve acquired (or press "enter" to skip): ')
+
+if wishlist :
+    you_books.append(wishlist)
+    futur_books.remove(wishlist)
+    print('\nUpdated library: ',you_books)
+    print('Updated wishlist: ',futur_books)
+else:
+    print('\nUpdated library: ',you_books)
+    print('Updated wishlist: ',futur_boods)
+
+
+donate = input('\n Enter the name of a book from your library you wish to donate (or press "enter" to skip: )')
+
+if donate:
+    you_books.remove(donate)
+    print('\nfinal library after donations: ',you_books)
+else:
+    print('\nfinal library after donations: ',you_books)

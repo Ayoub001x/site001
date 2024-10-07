@@ -1,0 +1,47 @@
+import random 
+print('Welcome to the Rock, Paper, Scissors game: ')
+helpyou = input('Press enter to continue or type (Help) for the rules: ')
+if helpyou:
+    print('********RULES********')
+    print('1) You choose and the computer chooses.')
+    print('2) Rock smashes scissors --> Rock wins.')
+    print('3) Scissors cut paper --> scissors wins.')
+    print('4) Paper covers rock --> paper wins')
+    hechoose = input('Enter your choise (rock✊, paper🤚, scissors✌): ').capitalize()
+else:
+    hechoose = input('Enter your choise (rock✊, paper🤚, scissors✌): ').capitalize()
+if hechoose == 'Rock':
+    rock = hechoose
+elif hechoose == 'Scissors':
+    scissors = hechoose
+elif hechoose == 'Paper':
+    Paper = hechoose
+else:
+    print('Sorry, you open on the range.')
+
+computer = random.randint(0,2)
+if computer == 0:
+    computer = 'Paper'
+elif computer == 1:
+    computer = 'Scissors'
+elif computer == 2:
+    computer = 'Rock'
+else:
+    print('sorry')
+
+if computer == hechoose:
+    print(f'draw\nthe computer choose {[computer]} too')
+elif hechoose == 'Paper' and computer == 'Scissors':
+    print('You lost\nthe computer choose [Scissors✌️] ')
+elif hechoose == 'Paper' and computer == 'Rock':
+    print('You won\nthe computer choose [Rock✊]')
+elif hechoose == 'Rock' and computer == 'Scissors':
+    print('You won\nthe computer choose [Scissors✌️]')
+elif hechoose == 'Rock' and computer == 'Paper':
+    print('You lost\nthe computer choose [Paper🤚]')
+elif hechoose == 'Scissors' and computer == 'Paper':
+    print('You won\nthe computer choose [Paper🤚]')
+elif hechoose == 'Scissore' and computer == 'Rock':
+    print('You lost\nthe computer choose [Rock✊]')
+else:
+    print('You can retorn')

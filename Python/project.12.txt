@@ -1,0 +1,9 @@
+sex = input('You are moroccan? {yes or no} \n').lower()
+if (sex == 'yes'):
+    age = input('how your age greater of 18? {yes or no} \n')
+    if (age == 'yes'):
+        print('You can took license.')
+    else:
+        print('Sorry, you are small.')
+else:
+    print('Sorry, you are not moroccan.')

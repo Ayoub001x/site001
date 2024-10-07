@@ -1,0 +1,5 @@
+area = input('shos on area:(fes), (tanja) or (ifran): \n')
+if area.lower() == ('fes' or 'tanja' or 'ifran'):
+    print(f'You shos {area}')
+else:
+    print('Sory, But you shos sity out of system')

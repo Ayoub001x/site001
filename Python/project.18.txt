@@ -1,0 +1,11 @@
+import random
+print('Welcome to"whose wallet?"')
+print('You will give me a list of nemes, and i will pick a person to pay')
+separated = input('If you`re ready, enter the names separated by a comma: ')
+
+name = separated.split(', ')
+lenname = len(name) -1
+int_len_name = int(lenname)
+imports = random.randint(0,int_len_name)
+nametry = name[imports]
+print(f'today the dinner at an expense {nametry}')

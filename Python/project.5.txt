@@ -1,0 +1,13 @@
+str_length = input('Please type length: \n')
+str_width = input('Please thpe width: \n')
+str_much = input('How much for 1 meter: \n')
+#عند تخزين المعلوما تخزن علئ شكل str
+total = 'The total area is: '
+length = float(str_length)
+width = float(str_width)
+area = length * width
+print(total + format(area))
+#لايمكن الجمع بين str and int
+total_much = 'Give the guy: '
+give = area * int(str_much)
+print(total_much + '$' + format(give))

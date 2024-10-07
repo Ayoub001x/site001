@@ -1,0 +1,44 @@
+print('Welcome to place the rabbit. \n')
+thetree = [['🌲', '🌲', '🌲'], ['🌲', '🌲', '🌲'], ['🌲', '🌲', '🌲']]
+print(f' {thetree[0]} \n {thetree[1]} \n {thetree[2]}')
+print('Where sould the rabbit go? 🐇')
+place = int(input('Please choose a row and a column: '))
+print('Success...')
+if place == 11 or place == 12 or place == 13:
+    thetree[0].remove('🌲')
+    if place == 11:
+        thetree[0].insert(0, '🐇')
+    elif place == 12:
+        thetree[0].insert(1, '🐇')
+    elif place == 13:
+        thetree[0].insert(2, '🐇')
+    else:
+        print('Sorry, Error in the number')
+    print(f'{thetree[0]}\n{thetree[1]}\n{thetree[2]}')
+
+elif place == 21 or place == 22 or place == 23:
+    thetree[1].remove('🌲')
+    if place == 21:
+        thetree[1].insert(0, '🐇')
+    elif place == 22:
+        thetree[1].insert(1, '🐇')
+    elif place == 23:
+        thetree[1].insert(2, '🐇')
+    else:
+        print('Sorry, Error in the number')
+    print(f'{thetree[0]}\n{thetree[1]}\n{thetree[2]}')
+    
+elif place == 31 or place == 32 or place == 33:
+    thetree[2].remove('🌲')
+    if place == 31:
+        thetree[2].insert(0, '🐇')
+    elif place == 32:
+        thetree[2].insert(1, '🐇')
+    elif place == 33:
+        thetree[2].insert(2, '🐇')
+    else:
+        print('Sorry,Error in the number ')
+    print(f'{thetree[0]}\n{thetree[1]}\n{thetree[2]}')
+
+else:
+    print('Sorry, is not understend.')

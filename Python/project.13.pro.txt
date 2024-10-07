@@ -1,0 +1,20 @@
+print("Welcome to my island.")
+print("There are two doors in front of you. \n 🚪 a red door and 🚪 a blue door.")
+door = input("which door do you want open? \n").lower()
+if door == 'red':
+    print('Great! now you entered a room.')
+    print('you found three boxes: 🎁 white, 🎁 black, 🎁 gree.')
+    box = input('White box do you open? \n').lower()
+    if box == 'white':
+        print('Oops 😮! you opened a box filled with snakes 🐍🐍🐍')
+    elif box == 'black':
+        print('Oops 😮! you opened a box filled with spiders🕷🕷🕷')
+    elif box == 'gree':
+        print('congratulation! you founed the treasure! 💵💵💵.')
+    else:
+        print(f'Sorry, I didn`nt understand [{door}] ???')
+elif door == 'blue':
+    print('Oops 😮, You chose the crocobile door.')
+    print('Game over! 🐊🐊🐊')    
+else:
+    print(f'Sorry, I didn`nt understand [{door}] ???')

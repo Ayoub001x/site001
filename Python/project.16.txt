@@ -1,0 +1,34 @@
+# countries = ['morocco', 'igypt', 'chin', 'amirica', 'gyrmani']
+# print(f'The first country on our list is {countries[0]} and the list country on our list is  {countries[-1]}')
+
+#The first one method
+ color1 = input('Add the first color you like: ')
+ add_color = input('Do you want ot add more color: (yes or no):')
+ if add_color.lower() == 'yes':
+     color2 = input('Add another color to the list: ')
+     print(f'the colors you like: \n {[color1, color2]}')
+ elif add_color.lower() == 'no':
+     print('ok')
+     print(f'the color you like: \n {[color1]}')
+ else:
+     print('Sorry, but is not undirstand.')
+
+#The second method
+color1 = input('Add the first color you like: ')
+add_color = input('Do you want ot add more color:(yes or no):')
+
+array1 = []
+array2 = []
+array1.append(color1)
+array2.append(color1)
+if add_color.lower() == 'yes':
+    color2 = input('Add another color to the list: ')
+    array2.append(color2)
+    print('the colors you like are: ')
+    print(array2)
+elif add_color.lower() == 'no':
+     print('ok')
+     print(array1)
+else:
+    print('the colors you like are: ')
+    print('Sorry, but is not undirstand.')

@@ -1,0 +1,37 @@
+import random
+print('Welcome to the coin guessing game!')
+print('Choose a method to toss the coin: \n 1- Using random.random() \n 2- Using random.randint()')
+type_random = int(input('Enter your choice (1 or 2): '))
+
+randint = random.randint(0,1)
+random = random.random()
+
+if type_random == 2:
+    type_guess = input('Enter your guess (Heads or Tails):').lower()
+    if type_guess == 'heads' and randint == 0:
+        print('Very good your answer true.')
+    elif type_guess == 'heads' and randint == 1:
+        print('Sorry! the answer fault.')
+    elif type_guess == 'tails' and randint == 0:
+        print('Sorry! the answer fault.')
+    elif type_guess == 'tails' and randint == 1:
+        print('Verry good your answer true.')
+    else:
+        print('sorry did not understand.')
+        print('you can retry.')
+elif type_random == 1:
+    type_guess2 = input('Enter your guess (Heads or Tails):').lower()
+    if type_guess2 == 'heads' and (random >= 0,5):
+        print('Very good your answer true.')
+    elif type_guess2 == 'heads' and (random < 0,5):
+        print('Sorry! the answer fault.')
+    elif type_guess2 == 'tails' and (random >= 0,5):
+        print('Sorry! the answer fault.')
+    elif type_guess2 == 'tails' and (random < 0,5):
+        print('Verry good your answer true.')
+    else:
+        print('sorry did not understand.')
+        print('you can retry.')
+else:
+    print('Sorry your answer is not available.')
+    print('choice between (1 or 2).')

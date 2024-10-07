@@ -1,0 +1,11 @@
+thecontry = input('Enter the contry that you want visits it and separated by comma: ').split(', ')
+for contry in thecontry:
+    print('\n'+contry)
+    thevisited = input('Have you visited it? (Yes/No): ').lower()
+    if thevisited == 'yes':
+        print('I hope to the visited very good.')
+    elif thevisited == 'no':
+        print('I hope to visit soon. ')
+    else:
+        print('Sorry, i am not intersted.')
+        print('You can to replay.')

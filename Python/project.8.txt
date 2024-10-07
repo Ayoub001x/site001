@@ -1,0 +1,6 @@
+duration_seconds = int(input('Enter the duration in seconds: '))
+day = (duration_seconds) // (3600 * 24)
+hour = (duration_seconds % (3600 * 24)) // 3600
+minet = (duration_seconds % 3600) // 60
+second = (duration_seconds) % 60 
+print(f'The duration is: {day} days, {hour} hours, {minet} minets, {second} seconds')

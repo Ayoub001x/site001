@@ -1,0 +1,15 @@
+people = []
+names = input('Enter the name of attendees separated by commas: ').split(', ')
+people.append(names)
+for person in people:
+    for name in person:
+        print('\n'+name+'\n')
+        comfirm = input('It this person atending? (Yes, No): ')
+        if comfirm.lower() == 'yes':
+            print('Attendance comfirmed.')
+            print('----------')
+        elif comfirm.lower() == 'no':
+            print('Attendance not comfirmed.')
+            print('----------')
+        else:
+            print('Sorry, Error in syntax.')
